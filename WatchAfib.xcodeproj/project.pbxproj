@@ -7,14 +7,62 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		0A1D7FAE1DA3F9070024E458 /* ResearchKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0A1D7FAB1DA3F8FD0024E458 /* ResearchKit.framework */; };
+		0A1D7FAF1DA3F9070024E458 /* ResearchKit.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 0A1D7FAB1DA3F8FD0024E458 /* ResearchKit.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		0A1D7FB41DA3F9590024E458 /* ConsentTask.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A1D7FB31DA3F9590024E458 /* ConsentTask.swift */; };
+		0A1D7FB71DA402050024E458 /* SurveyTask.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A1D7FB61DA402050024E458 /* SurveyTask.swift */; };
 		0ADCFECB1DA3F75C00BDBA72 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0ADCFECA1DA3F75C00BDBA72 /* AppDelegate.swift */; };
 		0ADCFECD1DA3F75C00BDBA72 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0ADCFECC1DA3F75C00BDBA72 /* ViewController.swift */; };
 		0ADCFED01DA3F75C00BDBA72 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0ADCFECE1DA3F75C00BDBA72 /* Main.storyboard */; };
 		0ADCFED21DA3F75C00BDBA72 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0ADCFED11DA3F75C00BDBA72 /* Assets.xcassets */; };
 		0ADCFED51DA3F75C00BDBA72 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0ADCFED31DA3F75C00BDBA72 /* LaunchScreen.storyboard */; };
+		0ADCFEE81DA3F80700BDBA72 /* heart.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 0ADCFEE71DA3F80700BDBA72 /* heart.jpg */; };
+		0ADCFEEA1DA3F80C00BDBA72 /* RU_logo(K).png in Resources */ = {isa = PBXBuildFile; fileRef = 0ADCFEE91DA3F80C00BDBA72 /* RU_logo(K).png */; };
+		0ADCFEEC1DA3F8A500BDBA72 /* ConsentDocument.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0ADCFEEB1DA3F8A500BDBA72 /* ConsentDocument.swift */; };
 /* End PBXBuildFile section */
 
+/* Begin PBXContainerItemProxy section */
+		0A1D7FAA1DA3F8FD0024E458 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 0A1D7FA41DA3F8FD0024E458 /* ResearchKit.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = B183A5951A8535D100C76870;
+			remoteInfo = ResearchKit;
+		};
+		0A1D7FAC1DA3F8FD0024E458 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 0A1D7FA41DA3F8FD0024E458 /* ResearchKit.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 86CC8E9A1AC09332001CCD89;
+			remoteInfo = ResearchKitTests;
+		};
+		0A1D7FB01DA3F9070024E458 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 0A1D7FA41DA3F8FD0024E458 /* ResearchKit.xcodeproj */;
+			proxyType = 1;
+			remoteGlobalIDString = B183A4731A8535D100C76870;
+			remoteInfo = ResearchKit;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		0A1D7FB21DA3F9070024E458 /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				0A1D7FAF1DA3F9070024E458 /* ResearchKit.framework in Embed Frameworks */,
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
 /* Begin PBXFileReference section */
+		0A1D7FA41DA3F8FD0024E458 /* ResearchKit.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = ResearchKit.xcodeproj; path = ../ResearchKit/ResearchKit.xcodeproj; sourceTree = "<group>"; };
+		0A1D7FB31DA3F9590024E458 /* ConsentTask.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ConsentTask.swift; sourceTree = "<group>"; };
+		0A1D7FB61DA402050024E458 /* SurveyTask.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SurveyTask.swift; sourceTree = "<group>"; };
 		0ADCFEC71DA3F75C00BDBA72 /* WatchAfib.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = WatchAfib.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		0ADCFECA1DA3F75C00BDBA72 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		0ADCFECC1DA3F75C00BDBA72 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -22,6 +70,9 @@
 		0ADCFED11DA3F75C00BDBA72 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		0ADCFED41DA3F75C00BDBA72 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		0ADCFED61DA3F75C00BDBA72 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		0ADCFEE71DA3F80700BDBA72 /* heart.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = heart.jpg; path = ../../Desktop/heart.jpg; sourceTree = "<group>"; };
+		0ADCFEE91DA3F80C00BDBA72 /* RU_logo(K).png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "RU_logo(K).png"; path = "../../Desktop/RU_logo(K).png"; sourceTree = "<group>"; };
+		0ADCFEEB1DA3F8A500BDBA72 /* ConsentDocument.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ConsentDocument.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -29,17 +80,29 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				0A1D7FAE1DA3F9070024E458 /* ResearchKit.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		0A1D7FA51DA3F8FD0024E458 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				0A1D7FAB1DA3F8FD0024E458 /* ResearchKit.framework */,
+				0A1D7FAD1DA3F8FD0024E458 /* ResearchKitTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
 		0ADCFEBE1DA3F75C00BDBA72 = {
 			isa = PBXGroup;
 			children = (
+				0A1D7FA41DA3F8FD0024E458 /* ResearchKit.xcodeproj */,
 				0ADCFEC91DA3F75C00BDBA72 /* WatchAfib */,
 				0ADCFEC81DA3F75C00BDBA72 /* Products */,
+				0ADCFEE61DA3F7FD00BDBA72 /* Resources */,
 			);
 			sourceTree = "<group>";
 		};
@@ -56,12 +119,24 @@
 			children = (
 				0ADCFECA1DA3F75C00BDBA72 /* AppDelegate.swift */,
 				0ADCFECC1DA3F75C00BDBA72 /* ViewController.swift */,
+				0A1D7FB61DA402050024E458 /* SurveyTask.swift */,
 				0ADCFECE1DA3F75C00BDBA72 /* Main.storyboard */,
 				0ADCFED11DA3F75C00BDBA72 /* Assets.xcassets */,
 				0ADCFED31DA3F75C00BDBA72 /* LaunchScreen.storyboard */,
 				0ADCFED61DA3F75C00BDBA72 /* Info.plist */,
+				0ADCFEEB1DA3F8A500BDBA72 /* ConsentDocument.swift */,
+				0A1D7FB31DA3F9590024E458 /* ConsentTask.swift */,
 			);
 			path = WatchAfib;
+			sourceTree = "<group>";
+		};
+		0ADCFEE61DA3F7FD00BDBA72 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				0ADCFEE91DA3F80C00BDBA72 /* RU_logo(K).png */,
+				0ADCFEE71DA3F80700BDBA72 /* heart.jpg */,
+			);
+			name = Resources;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -74,10 +149,12 @@
 				0ADCFEC31DA3F75C00BDBA72 /* Sources */,
 				0ADCFEC41DA3F75C00BDBA72 /* Frameworks */,
 				0ADCFEC51DA3F75C00BDBA72 /* Resources */,
+				0A1D7FB21DA3F9070024E458 /* Embed Frameworks */,
 			);
 			buildRules = (
 			);
 			dependencies = (
+				0A1D7FB11DA3F9070024E458 /* PBXTargetDependency */,
 			);
 			name = WatchAfib;
 			productName = WatchAfib;
@@ -111,6 +188,12 @@
 			mainGroup = 0ADCFEBE1DA3F75C00BDBA72;
 			productRefGroup = 0ADCFEC81DA3F75C00BDBA72 /* Products */;
 			projectDirPath = "";
+			projectReferences = (
+				{
+					ProductGroup = 0A1D7FA51DA3F8FD0024E458 /* Products */;
+					ProjectRef = 0A1D7FA41DA3F8FD0024E458 /* ResearchKit.xcodeproj */;
+				},
+			);
 			projectRoot = "";
 			targets = (
 				0ADCFEC61DA3F75C00BDBA72 /* WatchAfib */,
@@ -118,13 +201,32 @@
 		};
 /* End PBXProject section */
 
+/* Begin PBXReferenceProxy section */
+		0A1D7FAB1DA3F8FD0024E458 /* ResearchKit.framework */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.framework;
+			path = ResearchKit.framework;
+			remoteRef = 0A1D7FAA1DA3F8FD0024E458 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		0A1D7FAD1DA3F8FD0024E458 /* ResearchKitTests.xctest */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.cfbundle;
+			path = ResearchKitTests.xctest;
+			remoteRef = 0A1D7FAC1DA3F8FD0024E458 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+/* End PBXReferenceProxy section */
+
 /* Begin PBXResourcesBuildPhase section */
 		0ADCFEC51DA3F75C00BDBA72 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				0ADCFEE81DA3F80700BDBA72 /* heart.jpg in Resources */,
 				0ADCFED51DA3F75C00BDBA72 /* LaunchScreen.storyboard in Resources */,
 				0ADCFED21DA3F75C00BDBA72 /* Assets.xcassets in Resources */,
+				0ADCFEEA1DA3F80C00BDBA72 /* RU_logo(K).png in Resources */,
 				0ADCFED01DA3F75C00BDBA72 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -137,11 +239,22 @@
 			buildActionMask = 2147483647;
 			files = (
 				0ADCFECD1DA3F75C00BDBA72 /* ViewController.swift in Sources */,
+				0A1D7FB41DA3F9590024E458 /* ConsentTask.swift in Sources */,
+				0A1D7FB71DA402050024E458 /* SurveyTask.swift in Sources */,
+				0ADCFEEC1DA3F8A500BDBA72 /* ConsentDocument.swift in Sources */,
 				0ADCFECB1DA3F75C00BDBA72 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		0A1D7FB11DA3F9070024E458 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = ResearchKit;
+			targetProxy = 0A1D7FB01DA3F9070024E458 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
 		0ADCFECE1DA3F75C00BDBA72 /* Main.storyboard */ = {
@@ -259,6 +372,7 @@
 		0ADCFEDA1DA3F75C00BDBA72 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = WatchAfib/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
@@ -271,6 +385,7 @@
 		0ADCFEDB1DA3F75C00BDBA72 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = WatchAfib/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
@@ -299,6 +414,7 @@
 				0ADCFEDB1DA3F75C00BDBA72 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
