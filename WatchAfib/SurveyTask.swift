@@ -11,12 +11,17 @@ import ResearchKit
 public var SurveyTask: ORKOrderedTask {
     
     var steps = [ORKStep]()
-    
+    /* Instruction
+     This section deals with the introduction of the survey
+     */
     let instructionStep = ORKInstructionStep(identifier: "IntroStep")
-    instructionStep.title = "The Questions Three"
-    instructionStep.text = "Who would cross the Bridge of Death must answer me these questions three, ere the other side they see."
+    instructionStep.title = "Initial survey"
+    instructionStep.text = "In this brief initial survey, we will ask you some basic questions about your heart and overall health."
     steps += [instructionStep]
     
+    /* Enter the name
+     
+     */
     let nameAnswerFormat = ORKTextAnswerFormat(maximumLength: 20)
     nameAnswerFormat.multipleLines = false
     
@@ -25,12 +30,15 @@ public var SurveyTask: ORKOrderedTask {
     let nameQuestionStep = ORKQuestionStep(identifier: "QuestionStep", title: nameQuestionStepTitle, answer: nameAnswerFormat)
     steps += [nameQuestionStep]
     
+    /* What is known about the patient's history on atrial fibriallation
+     */
+    
     let questQuestionStepTitle = "Have been diagnosed with a heart condition named atrial fibrillation?"
     
     let textChoices = [
-        ORKTextChoice(text: "Yes, I was diagnosed ", value: 0 as NSCoding & NSCopying & NSObjectProtocol),
-        ORKTextChoice(text: "Seek the Holy Grail", value: 1 as NSCoding & NSCopying & NSObjectProtocol),
-        ORKTextChoice(text: "Find a shrubbery", value: 2 as NSCoding & NSCopying & NSObjectProtocol)
+        ORKTextChoice(text: "Yes, I was diagnosed by my physician.", value: 0 as NSCoding & NSCopying & NSObjectProtocol),
+        ORKTextChoice(text: "No, but I regular expierence an irregular heart beat.", value: 1 as NSCoding & NSCopying & NSObjectProtocol),
+        ORKTextChoice(text: "Unsure", value: 2 as NSCoding & NSCopying & NSObjectProtocol)
     ]
     
     let questAnswerFormat: ORKTextChoiceAnswerFormat = ORKAnswerFormat.choiceAnswerFormat(with: .singleChoice, textChoices: textChoices)
